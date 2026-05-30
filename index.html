@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Turtle Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="navbar">
+            <div class="brand">
+                <span>🐢</span>
+                <h1>Wild Turtle Store</h1>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li>Inicio</li>
+                <li>Productos</li>
+                <li>Promociones</li>
+                <li>Contacto</li>
+            </ul>
+            <button class="menu-button" id="menu-button" aria-label="abrir menu">
+                ☰
+            </button>
+        </nav>
+        <aside class="filters">
+            <label for="order">Ordenar por
+
+            </label>
+            <select name="order" id="order">
+                <option value="">Precio</option>
+                <option value="">Mas Vendido</option>
+                <option value="">Nombre</option>
+            </select>
+        </aside>
+<main class="main">
+    <div class="products-wrapers">
+        <div class="products">
+            <article class="card">
+                <img src="assets/img/Boossters.avif" alt="Cafe Expreso">
+                <div class="card-content">
+                    <h2>Cafe Expreso</h2>
+                    <p>Sobres ideales para jugar, coleccionar y descubrir nuevas cartas de Strixhaven.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/Bundle.avif" alt="Cafe Latte">
+                <div class="card-content">
+                    <h2>Cafe Latte</h2>
+                    <p>Caja de colección con sobres, tierras y accesorios para jugadores y coleccionistas.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+            <article class="card">
+                <img src="assets/img/Card Theme Decks.avif" alt="Cafe Expreso">
+                <div class="card-content">
+                    <h2>Cafe Expreso</h2>
+                    <p>Kit completo para organizar una noche de Draft con amigos.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/Codex Bundle.avif" alt="Cafe Latte">
+                <div class="card-content">
+                    <h2>Cafe Latte</h2>
+                    <p>Edición especial con sobres, accesorios exclusivos y contenido premium.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+                        <article class="card">
+                <img src="assets/img/Collector Booster.avif" alt="Cafe Expreso">
+                <div class="card-content">
+                    <h2>Cafe Expreso</h2>
+                    <p>Sobres premium con cartas especiales, versiones foil y diseños exclusivos.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/Commander Decks.avif" alt="Cafe Latte">
+                <div class="card-content">
+                    <h2>Cafe Latte</h2>
+                    <p>Mazos listos para jugar Commander con estrategias únicas de Strixhaven.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+            <article class="card">
+                <img src="assets/img/Draft Night.avif" alt="Cafe Expreso">
+                <div class="card-content">
+                    <h2>Cafe Expreso</h2>
+                    <p>Kit completo para organizar una noche de Draft con amigos.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/Prerelease PAck.avif" alt="Cafe Latte">
+                <div class="card-content">
+                    <h2>Cafe Latte</h2>
+                    <p>Mazos temáticos de 60 cartas, listos para jugar y perfectos para comenzar tu aventura en Magic.</p>
+                    <button>Ver mas</button>
+                </div>
+            </article>
+            <div class="pagination">
+            <a href=""><<</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">>></a>
+            </div>
+    </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p>Wild Turtle Store</p>
+        </footer>
+    </div>
+    
+    <script>
+    const menuButton = document.getElementById('menu-button');
+    const navLinks = document.getElementById('nav-links');
+
+    menuButton.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+</script>   
+</body>
+</html>
